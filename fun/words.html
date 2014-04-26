@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html>
+
+<head>
+
+	<title>Milwaukee Fun's Favorite Words</title>
+
+	<meta property="og:title" content="What are Milwaukee Fun's favorite words?" id="ogTitle" />
+    <meta property="og:site_name" content="Milwaukee Fun's Favorite Words" />
+	<meta property="og:url" content="http://meetup.com/milwaukeefun/" id="ogUrl" />
+	
+	<meta property="og:type" content="meetup" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin' rel='stylesheet' type='text/css'>
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+</head>
+<body>
+	
+<div id="wtf">
+  	<div id="so" class="words">What are Milwaukee Fun's favorite words?</div>
+  	<div id="frames">
+  	  <!-- frames here -->
+  	</div>
+</div>
+<div id="share" class="clearfix">
+		<div class="wrap">
+		<div id="links">
+			<a href="http://meetup.com/milwaukeefun/"><img src="images/meetup.jpg" alt="Milwaukee Fun"></a>
+		</div>
+	</div>
+</div>
+<script src="../ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="mustache.js"></script>
+<script src="modernizer.js"></script>
+
+
+<script type="text/html" id="frame_template">
+  <div class="frame future">
+    <div class="text">{{text}}</div>
+    <div class="footnote">{{footnote}}</div>
+    <div class="bfd">
+  		<a href="javascript:void(0);" class="quip">{{quip}}</a>
+  	</div>
+  </div>
+</script>
+
+<script type="text/javascript">
+var text = [];
+text[1] = "Can it be a phrase?? I love the phrase peace out"; text[2] = "Flibbertigibbet"; text[3] = "Solemnly"; text[4] = "Dijurido"; text[5] = "Dawg"; text[6] = "Fuck. No, actually it is brilliant."; text[7] = "Inconceivable!"; text[8] = "Nascar"; text[9] = "Serendipity"; text[10] = "It is a Vietnamese word."; text[11] = "Wow!"; text[12] = "Conundrum"; text[13] = "I know right!"; text[14] = "I really, really, really doubt I should say so here. Suffice it to say, even though I used the word three times in the prior sentence, the word is not 'really'."; text[15] = "Sport"; text[16] = "Smile!"; text[17] = "Hey!"; text[18] = "Champion"; text[19] = "Altruistic"; text[20] = "Literally"; text[21] = "Stoked"; text[22] = "Shocking... Said with a hint of sarcasm :p"; text[23] = "Cantankerous"; text[24] = "Esoteric."; text[25] = "Enchanted"; text[26] = "Super but only if it's said sarcastically."; text[27] = "Bakery"; text[28] = "Hard to choose again - how about buffet, packer, philosophy, or exceptional"; text[29] = "Really"; text[30] = "Effervescent"; text[31] = "Kismet"; text[32] = "Music"; text[33] = "Vacation"; text[34] = "Creative"; text[35] = "Obfuscation"; text[36] = "Plangent"; text[37] = "Any curse words. Especially in Spanish."; text[38] = "Hope"; text[39] = "Party!!! :-)"; text[40] = "Nefarious"; text[41] = "Facetious"; text[42] = "Savvy"; text[43] = "Ubiquitous"; text[44] = "Happy"; text[45] = "Snarky"; text[46] = "Shimmer"; text[47] = "I, it's both a letter and a word. It is one of the only common words that is always capitalized, and it is horizontally symmetrical. Best of all, it refers to me, and I have a long standing bias towards myself :d"; text[48] = "Yum"; text[49] = "TGIF"; text[50] = "Matt Smith is the best Dr. Who ever."; text[51] = "I'm in the Army National Guard"; text[52] = "Babysteps"; text[53] = "Red"; text[54] = "Mosquito- it's a horrible creature to some, but the word is so fun to say!"; text[55] = "Your kidding, right?"; text[56] = "Umm.. Not sure"; text[57] = "Cheers"; text[58] = "Giggady"; text[59] = "Discombobulated. I love the recombobulation area at the Milwaukee airport."; text[60] = "Huh?"; text[61] = "Cheese (I'm french...)"; text[62] = "I'll get back to you on that."; text[63] = "Maybe"; text[64] = "Adventure"; text[65] = "Collect"; text[66] = "Laconic"; text[67] = "Spaghetti"; text[68] = "Behoove."; text[69] = "Discombobulated"; text[70] = "Poop lmfao gets me everything lol"; text[71] = "Passion"; text[72] = "I dont know. My unfavorite word is plethora."; text[73] = "Namaste"; text[74] = "Bubbler of course."; text[75] = "Kwijibo"; text[76] = "Smorgasbord"; text[77] = "Mantequilla <-- butter in Espanol"; text[78] = "I'm not falling for that trick again!"; text[79] = "Bubbler.... What an awesome word and unique to Milwaukee!"; text[80] = "Probably the f-word, but not around my kid of course!"; text[81] = "Come on."; text[82] = "Shhhh..."; text[83] = "Fabulous!"; text[84] = "Pedal"; text[85] = "Sweet!!!"; text[86] = "Awesome!"; text[87] = "Sticky"; text[88] = "Lagniappe"; text[89] = "Surreptitiously"; text[90] = "Strength.  Because without it I would not be who and where I am today."; text[91] = "Puberphonia"; text[92] = "Kafkaesque"; text[93] = "Nein! (German word for no)"; text[94] = "Ummm… Work has been a bit less than stellar lately, so my current favorite word isn't something that should be said in polite company… :)"; text[95] = "Loaf."; text[96] = "Semprini."; text[97] = "Defenestration - the act of throwing someone or something out of a window."; text[98] = "Phenomenal"; text[99] = "You're really putting me on the spot here! (Those are my Secrets)"; text[100] = "Elixir"; text[101] = "Intergalactic"; text[102] = "Whewhew :-)"; text[103] = "Trenchancy"; text[104] = "Mississippi"; text[105] = "Forsure"; text[106] = "Teeth :)"; text[107] = "Lets play it by ear."; text[108] = "Copacetic"; text[109] = "Explore"; text[110] = "Lozenge"; text[111] = "Scrumptrulescent"; text[112] = "Here's a few that I think would be contenders: Cheeky, Audacious, Sensual, Valiant … Not sure if we can list profane words, but definitely have some favorites."; text[113] = "Supercalifragilistic"; text[114] = "WWE"; text[115] = "Impossible question, but currently Churlish is right up there."; text[116] = "Whatever!"; text[117] = "No favorite word just favorite thoughts."; text[118] = "Tremendous"; text[119] = "I guess I say awesome a lot lol"; text[120] = "Groovy. Oldie but goody"; text[121] = "Gambrinous"; text[122] = "Nice!"; text[123] = "Pantaloons."; text[124] = "Seriously?"; text[125] = "Different. Whenever that is said about a food, a place, an experience, I feel compelled to try it or do it because curiousity gets the best of me."; text[126] = "Epic"; text[127] = "Okay (tough to come up with a word)"; text[128] = "Aperture"; text[129] = "Chardonnay"; text[130] = "Squeegee"; text[131] = "Cool"; text[132] = "Juice"; text[133] = "Exceptional"; text[134] = "Quality"; text[135] = "Honestly"; text[136] = "Camouflage"; text[137] = "Carabiner"; text[138] = "Hi."; text[139] = "It would depend on the circumstances."; text[140] = "Hmmm...I'll have to think about that."; text[141] = "Thicket! I love the way the word sounds."; text[142] = "Chill"; text[143] = "Love"; text[144] = "Almost done"; text[145] = "Proclivity"; text[146] = "Shwing"; text[147] = "Chortle."; text[148] = "Freedom"; text[149] = "None come to mind."; text[150] = "Lol...I've never been asked that before. I'll have to get back to you... Hope is a good one for sure!"; text[151] = "Purple"; text[152] = "Think"; text[153] = "Summer"; text[154] = "Itinerant"; text[155] = "Hmm, never thought about it!"; text[156] = "Acidulated"; text[157] = "Ummmmm, I really don't have a favorite word, maybe money?! Ha-ha."; text[158] = "I can't say that I have one. Yesterday, I used the word Conundrum and my friends jokingly said, where did that come from; does anyone use that word anymore?"; text[159] = "Road"; text[160] = "Duh"; text[161] = "At the moment, projecting as in, don't project your feelings onto me about how my lunch smells when I heat it up in the microwave at work (long story)."; text[162] = "Pique, as in he piqued my interest"; text[163] = "If you are asking me what word I say most frequently, that would be f**k.  I cuss like a tourettes victim."; text[164] = "Bam"; text[165] = "I really like to crochet."; text[166] = "I have a dog named Derby"; text[167] = "Depends on the context of the moment. Right now the word is Wordporn."; text[168] = "Fantastic"; text[169] = "Ootini"; text[170] = "Inspire."; text[171] = "Here are a few - Nevertheless, Infinite, Unequivocal, Irrevocable, Synergy, Anomaly."; text[172] = "Winning!"; text[173] = "Flapdoodle"; text[174] = "Rocks"; text[175] = "Amazing"; text[176] = "Raunchy"; text[177] = "Break a leg"; text[178] = "Bartholemew"; text[179] = "Butterscotch"; text[180] = "Facetious no, Doppleganger, no, wait, Milquetoast. Hmm, do I really have to pick one?"; text[181] = "Extrapolate"; text[182] = "Truth"; text[183] = "Water"; text[184] = "Spontaneous"; text[185] = "Margarita =]"; text[186] = "Cake - without any innuendo. I just love sweets. Yellow cake, white frosting. Yum."; text[187] = "Mellifluous."; text[188] = "Loquacious and verbose."; text[189] = "Uf duh (not sure its actually a word, and it could mean anything from oh, the is the most awful smell in the world to yep, that sure is heavy."; text[190] = "Art"; text[191] = "Mystery"; text[192] = "Slickery"; text[193] = "Ravishing!"; text[194] = "Shitty"; text[195] = "Conversation"; text[196] = "Fudderwacken"; text[197] = "Edited"; text[198] = "Macchiato"; text[199] = "Elbow"; text[200] = "Fractal"; text[201] = "Just sayn"; text[202] = "Pizza!"; text[203] = "Fun!"; text[204] = "It's naughty ;)"; text[205] = "Beautiful"; text[206] = "Solstice"; text[207] = "Bunny"; text[208] = "Peace"; text[209] = "Indubitably"; text[210] = "Ummm....."; text[211] = "Aunque. It's Spanish, and I just love the way it sounds."; text[212] = "Supercalifragilisticexpialidocious"; text[213] = "Try"; text[214] = "Chive on"; text[215] = "Cosette. My daughter's name."; text[216] = "Lol too many to choose from"; text[217] = "Plethora"; text[218] = "I like Pat McCurdy music and the WWE"; text[219] = "Soliloquy."; text[220] = "Abrupt. It just sounds funny."; text[221] = "I couldn't possibly pick just one.. It's like picking a favorite child.... :)"; text[222] = "Z words, cause they are fun to say. Like zebra or zelda."; text[223] = "Vrooooooooooooooooooom"; text[224] = "Allons-y"; text[225] = "Noumena"; text[226] = "Scrap"; text[227] = "Weekend?"; text[228] = "Possible"; text[229] = "Word"; text[230] = "Gratis."; text[231] = "Obelisk"; text[232] = "Shimmy"; text[233] = "Wonderful"; text[234] = "Snorkel"; text[235] = "Currently? Slutface. It's a term of endearment. :)"; text[236] = "Hahahahaha"; text[237] = "Supercalafragalisticexpialadoshus"; text[238] = "Ostentatious"; text[239] = "Myriad"; text[240] = "I have to have just one!?? This week it would be pontificate."; text[241] = "Really! No, really!!!"; text[242] = "Kodaline"; text[243] = "Exacerbate"; text[244] = "Family"; text[245] = "Breathe"; text[246] = "Bananas"; text[247] = "Nudnik"; text[248] = "Tropical"; text[249] = "Cha"; text[250] = "Factotum"; text[251] = "Ionno"; text[252] = "Success"; text[253] = "I have two Secrets: Shenanigans and Wunderbar!"; text[254] = "Wanderlust"; text[255] = "Replevin (sorry...I'm an attorney)"; text[256] = "Homonym (say it... It is so smooth)"; text[257] = "Energy"; text[258] = "Please"; text[259] = "Sensational"; text[260] = "Schmores (smores)"; text[261] = "Faith"; text[262] = "Bacon"; text[263] = "Czechoslovakia"; text[264] = "Shibboleth"; text[265] = "Right!"; text[266] = "Bazinga!!"; text[267] = "Money"; text[268] = "Ni"; text[269] = "Ciao! Which in Italian is used for hello and goodbye"; text[270] = "Laugh"; text[271] = "Yes, and... (I know, that's two words, I couldn't stop myself.)"; text[272] = "Country"; text[273] = "Turtle"; text[274] = "New"; text[275] = "Strike!"; text[276] = "Hopscotch"; text[277] = "Serenity."; text[278] = "Defenestration, you can look it up or ask me when we meet."; text[279] = "Phenomenal… Jabroni is a close second though lol"; text[280] = "Shit."; text[281] = "Too many words to choose from. I love words. It's like asking me to pick my favorite child."; text[282] = "Interesting or unusual. Some of the most memorable things come from some of the most unexpected places."; text[283] = "Huzzah!"; text[284] = "Onamatopoeia"; text[285] = "Kerfuffle"; text[286] = "Yeah"; text[287] = "Absolutely"; text[288] = "Flabbergasted"; text[289] = "Genuine (if your going to analyze it.) CWM (if not.)"; text[290] = "Pulchritudinous"; text[291] = "Nice try..."; text[292] = "Am I allowed to curse?"; text[293] = "Opportunity"; text[294] = "Malaise, for no particular reason."; text[295] = "Drawer"; text[296] = "Fluffy"; text[297] = "Dream"; text[298] = "Shenanigans... It's just fun to say. :)"; text[299] = "Yes!"; text[300] = "Never thought about it"; text[301] = "Hmmm....."; text[302] = "I have many Secrets, do I have to pick just one?"; text[303] = "I don't like the color blue."; text[304] = "Giddy-up"; text[305] = "Excellent!"; text[306] = "Shenanigans... Or ballyhoo... Maybe libations... This is hard."; text[307] = "Moist"; text[308] = "Accomplished"; text[309] = "Clandestine"; text[310] = "Sushi"; text[311] = "Ooh good one! Gubernatorial. Just rolls off the tongue."; text[312] = "Pumpernickel"; text[313] = "Rochambeau"; text[314] = "Hmmmm...."; text[315] = "Right"; text[316] = "Secret"; text[317] = "Echo"; text[318] = "Touche'"; text[319] = "Schamatics"; text[320] = "Sunshine"; text[321] = "Honesty"; text[322] = "Lets have some fun"; text[323] = "Plasmolyzed."; text[324] = "Tough question."; text[325] = "Resourceful"; text[326] = "That's not fair, I like to use a lot of them...and wouldn't want to play favorites"; text[327] = "Perhaps"; text[328] = "Yooooo"; text[329] = "Great!"; var footnotes = [];
+footnotes[1] = "Nicole"; footnotes[2] = "Glenn"; footnotes[3] = "Samantha"; footnotes[4] = "Carissa"; footnotes[5] = "Wayne"; footnotes[6] = "Heidi"; footnotes[7] = "Nicole"; footnotes[8] = "Scott"; footnotes[9] = "Katie, Javier, Michelle, Octavio, and Jay"; footnotes[10] = "Nghia"; footnotes[11] = "Christi"; footnotes[12] = "Cathy"; footnotes[13] = "Ty"; footnotes[14] = "Rich"; footnotes[15] = "Chetan"; footnotes[16] = "Julie and Andrea"; footnotes[17] = "Agboola, Terena, Joua, and Nic"; footnotes[18] = "Josh"; footnotes[19] = "Sheryl"; footnotes[20] = "Arlene"; footnotes[21] = "Katie"; footnotes[22] = "Beverly"; footnotes[23] = "Mishi"; footnotes[24] = "Kevin"; footnotes[25] = "Bena"; footnotes[26] = "Aisha"; footnotes[27] = "Chloe"; footnotes[28] = "Jeffrey"; footnotes[29] = "Nicholas and Tom"; footnotes[30] = "Savannah and Lindsay"; footnotes[31] = "Colleen"; footnotes[32] = "Somdeb"; footnotes[33] = "Alissa and Amy"; footnotes[34] = "Meredith"; footnotes[35] = "Robb"; footnotes[36] = "April"; footnotes[37] = "Karen-Elaine"; footnotes[38] = "Christina and Philip"; footnotes[39] = "Bram"; footnotes[40] = "Justin"; footnotes[41] = "Adam, Krista, and Lori"; footnotes[42] = "Tisha "; footnotes[43] = "Arleen"; footnotes[44] = "Saboura"; footnotes[45] = "Keri and Nick"; footnotes[46] = "Jessica"; footnotes[47] = "Kevin"; footnotes[48] = "Angela"; footnotes[49] = "Joseph"; footnotes[50] = "Min"; footnotes[51] = "Tori"; footnotes[52] = "Joyce"; footnotes[53] = "April"; footnotes[54] = "Tim"; footnotes[55] = "Traci"; footnotes[56] = "Shada"; footnotes[57] = "Pat and Ethan"; footnotes[58] = "Wil"; footnotes[59] = "Yvonne"; footnotes[60] = "Bethany "; footnotes[61] = "Matthieu"; footnotes[62] = "Larissa"; footnotes[63] = "V"; footnotes[64] = "Aubrey and Sarah"; footnotes[65] = "Justin"; footnotes[66] = "Christyn"; footnotes[67] = "Matt and Carrie"; footnotes[68] = "David"; footnotes[69] = "Browen, Mike, Katie and Yvonne"; footnotes[70] = "Shaneela"; footnotes[71] = "Raj and Weiwei"; footnotes[72] = "Tasha"; footnotes[73] = "Will.I.Am"; footnotes[74] = "Cassandra"; footnotes[75] = "Andy"; footnotes[76] = "Laura"; footnotes[77] = "Akeen"; footnotes[78] = "Kristi"; footnotes[79] = "Nicki"; footnotes[80] = "Amanda"; footnotes[81] = "Zozo"; footnotes[82] = "Ashish"; footnotes[83] = "Jessica and Barbara"; footnotes[84] = "Zixiao"; footnotes[85] = "Bellarae"; footnotes[86] = "Tj, Delores, Shelby, Chelsea, Eatl, Latoya, John, and Ashley"; footnotes[87] = "Nicole"; footnotes[88] = "Jan "; footnotes[89] = "Megan"; footnotes[90] = "Kayleigh"; footnotes[91] = "Joy"; footnotes[92] = "Joseph"; footnotes[93] = "Brenda"; footnotes[94] = "Jennifer"; footnotes[95] = "Holly"; footnotes[96] = "John"; footnotes[97] = "Cory and Billy"; footnotes[98] = "Ashley"; footnotes[99] = "Jessica"; footnotes[100] = "Ali"; footnotes[101] = "Mrp"; footnotes[102] = "Jean"; footnotes[103] = "Todd"; footnotes[104] = "Suzie"; footnotes[105] = "Kari"; footnotes[106] = "Sarah"; footnotes[107] = "Erick"; footnotes[108] = "W. Kelly"; footnotes[109] = "David"; footnotes[110] = "Michael"; footnotes[111] = "Emily"; footnotes[112] = "Denise"; footnotes[113] = "Wendy"; footnotes[114] = "Patrick"; footnotes[115] = "Eye"; footnotes[116] = "Jen"; footnotes[117] = "Ian"; footnotes[118] = "Eric"; footnotes[119] = "Salnhallie"; footnotes[120] = "Richelle"; footnotes[121] = "Irvin"; footnotes[122] = "Jeremy"; footnotes[123] = "Christina"; footnotes[124] = "Chris"; footnotes[125] = "Elsa"; footnotes[126] = "Lee"; footnotes[127] = "Joel"; footnotes[128] = "Matt"; footnotes[129] = "Pam"; footnotes[130] = "Michelle"; footnotes[131] = "Liz"; footnotes[132] = "Krista"; footnotes[133] = "Sarah"; footnotes[134] = "Laurie"; footnotes[135] = "Andrew"; footnotes[136] = "Mona"; footnotes[137] = "Kelly"; footnotes[138] = "Justin"; footnotes[139] = "Christina"; footnotes[140] = "Katie"; footnotes[141] = "Kim"; footnotes[142] = "Sibl"; footnotes[143] = "Rachael, Rijalynne, Maria, Vicki, Andrew, Joannie, and Stephanie"; footnotes[144] = "Roaa"; footnotes[145] = "Xander and Shari"; footnotes[146] = "Leroy"; footnotes[147] = "Anna "; footnotes[148] = "Kishore, Detaya, and Lawrence"; footnotes[149] = "Kelly"; footnotes[150] = "Stephanie"; footnotes[151] = "Jennifer"; footnotes[152] = "Peter"; footnotes[153] = "Stu and Shilo"; footnotes[154] = "Dave"; footnotes[155] = "Liana"; footnotes[156] = "Sandra"; footnotes[157] = "Ken"; footnotes[158] = "Trari"; footnotes[159] = "Mike"; footnotes[160] = "Bernard "; footnotes[161] = "Ashley"; footnotes[162] = "Sonia"; footnotes[163] = "Val"; footnotes[164] = "Rizza"; footnotes[165] = "Kristen"; footnotes[166] = "Ashley"; footnotes[167] = "David"; footnotes[168] = "Kristin and Jorge"; footnotes[169] = "Ryan"; footnotes[170] = "Carly "; footnotes[171] = "Patty"; footnotes[172] = "Sabrina"; footnotes[173] = "Lacey"; footnotes[174] = "Kary"; footnotes[175] = "Ryan and Katie"; footnotes[176] = "Jennifer"; footnotes[177] = "Nana"; footnotes[178] = "Phil"; footnotes[179] = "Mike"; footnotes[180] = "Hip Gnosis"; footnotes[181] = "Ryan L"; footnotes[182] = "Jareth"; footnotes[183] = "Julie"; footnotes[184] = "Jackee "; footnotes[185] = "Kristin"; footnotes[186] = "Anjail"; footnotes[187] = "Eryn"; footnotes[188] = "Maurina"; footnotes[189] = "Kelly"; footnotes[190] = "Janet"; footnotes[191] = "Martinique"; footnotes[192] = "Tanya"; footnotes[193] = "Jill Tucker"; footnotes[194] = "Jennifer"; footnotes[195] = "Stacy"; footnotes[196] = "E Marie Kerwin"; footnotes[197] = "Lori"; footnotes[198] = "Rhonda"; footnotes[199] = "Katherine"; footnotes[200] = "Joseph"; footnotes[201] = "Rob"; footnotes[202] = "Brett"; footnotes[203] = "Brett, Wayne, Sarah, Vicki, Alexandra, Katie, Nikki, Jt, Ashley, Cliff, and Jason"; footnotes[204] = "Jamie"; footnotes[205] = "Jennifer"; footnotes[206] = "Bec"; footnotes[207] = "Allison"; footnotes[208] = "Angel, Julia, and Theresa"; footnotes[209] = "Sarina"; footnotes[210] = "Tiffanie"; footnotes[211] = "Jennifer"; footnotes[212] = "Pam"; footnotes[213] = "Kirsten"; footnotes[214] = "Levi"; footnotes[215] = "Arica"; footnotes[216] = "Tammy "; footnotes[217] = "Renee, Tracey, Amy, and Jacquelyn"; footnotes[218] = "Patrick"; footnotes[219] = "Tiffany"; footnotes[220] = "Kim"; footnotes[221] = "Lynette"; footnotes[222] = "Nilo"; footnotes[223] = "Shawn"; footnotes[224] = "Mindy "; footnotes[225] = "Eric"; footnotes[226] = "Alicia"; footnotes[227] = "Dawn"; footnotes[228] = "Scott"; footnotes[229] = "Max and Lucas"; footnotes[230] = "Chris"; footnotes[231] = "Stephen"; footnotes[232] = "Laura"; footnotes[233] = "Jessica"; footnotes[234] = "Kassandra"; footnotes[235] = "Steph"; footnotes[236] = "Pratap"; footnotes[237] = "Sarah"; footnotes[238] = "Kat"; footnotes[239] = "Caley"; footnotes[240] = "Hawley"; footnotes[241] = "Janine"; footnotes[242] = "Breanna"; footnotes[243] = "Erin"; footnotes[244] = "Sara and Mia"; footnotes[245] = "Jenny "; footnotes[246] = "Shannon"; footnotes[247] = "Gabriella"; footnotes[248] = "Maureen"; footnotes[249] = "Cindy"; footnotes[250] = "Jennifer"; footnotes[251] = "Tijuandria"; footnotes[252] = "Garrence"; footnotes[253] = "Maggie"; footnotes[254] = "Bree"; footnotes[255] = "Angela"; footnotes[256] = "Tiffany"; footnotes[257] = "Olivia"; footnotes[258] = "Dena"; footnotes[259] = "Roxie"; footnotes[260] = "Lisa"; footnotes[261] = "Kristine"; footnotes[262] = "Rosanna"; footnotes[263] = "Krystina"; footnotes[264] = "Steve"; footnotes[265] = "Nicole"; footnotes[266] = "Sumeet"; footnotes[267] = "Felix and Diyonna"; footnotes[268] = "Dan"; footnotes[269] = "Angelo"; footnotes[270] = "Stacy, Cat, and Al"; footnotes[271] = "Michael"; footnotes[272] = "Brian"; footnotes[273] = "Josh"; footnotes[274] = "Lyndsey"; footnotes[275] = "Kyle"; footnotes[276] = "Anna "; footnotes[277] = "Karra"; footnotes[278] = "Billy and Cory"; footnotes[279] = "Andrew"; footnotes[280] = "Amelia"; footnotes[281] = "Jules"; footnotes[282] = "Don"; footnotes[283] = "Jenna"; footnotes[284] = "Christy, Shannon, Andy, and Julia"; footnotes[285] = "Tamara"; footnotes[286] = "Crystal"; footnotes[287] = "Joni and Michelle"; footnotes[288] = "Emily and Kailie"; footnotes[289] = "Brian N"; footnotes[290] = "Mike Miller"; footnotes[291] = "Angela"; footnotes[292] = "Lindsay"; footnotes[293] = "Levita"; footnotes[294] = "Chad"; footnotes[295] = "Kimberly and Kimb"; footnotes[296] = "Sarah "; footnotes[297] = "Mary and Jacob"; footnotes[298] = "Michelle, Danielle, Jessica, John, Colleen, and Jesse"; footnotes[299] = "Kim, Kim, Evangelina, Christeen, Joseph, Andrea, Marty, Samantha, Bob, Bharat, Raison, David, and Lesley"; footnotes[300] = "Danielle"; footnotes[301] = "Jamie"; footnotes[302] = "Brad"; footnotes[303] = "Tes"; footnotes[304] = "Niki Warnick"; footnotes[305] = "Lori"; footnotes[306] = "Jesse R Dercks"; footnotes[307] = "Nate"; footnotes[308] = "Chris "; footnotes[309] = "Roseann"; footnotes[310] = "Lisa and Cheryl"; footnotes[311] = "Katie"; footnotes[312] = "Emily"; footnotes[313] = "Lisa"; footnotes[314] = "Erica"; footnotes[315] = "Sara"; footnotes[316] = "Nosonovsky"; footnotes[317] = "Carly"; footnotes[318] = "Nick and Shannon"; footnotes[319] = "Porsha"; footnotes[320] = "Kathy and Natalie"; footnotes[321] = "Laeh"; footnotes[322] = "Ashutosh"; footnotes[323] = "Chris"; footnotes[324] = "Brian"; footnotes[325] = "Andrew"; footnotes[326] = "Leon"; footnotes[327] = "Collette"; footnotes[328] = "Tywon"; footnotes[329] = "Sarah"; var quips = [];
+quips[0] = "Next!";
+quips[1] = "There's got to be a better one than that...";
+quips[2] = "Tell me another.";
+quips[3] = "I've used that word since the fifth grade.";
+quips[4] = "I love that word. Got another one?";
+quips[5] = quips[0];
+quips[6] = quips[0];
+quips[7] = quips[0];
+quips[8] = "They stole that one from me.";
+quips[9] = "Cool! What else?";
+quips[10] = quips[0];
+quips[11] = quips[0];
+quips[12] = "More please!";
+</script>
+
+
+<script type="text/javascript">
+
+$(function(){
+  var cursor = 1 + Math.floor((text.length - 1)*Math.random());
+  var $frames = $('#frames');
+  var $current, $old;
+  var frame_template = $('#frame_template').html();
+  
+  function next_frame(){
+    $old = $($current);
+    
+    // set up next frame
+    $current = $(Mustache.render(frame_template, {
+      text: text[cursor],
+      footnote: footnotes[cursor],
+      quip: quips[Math.floor(Math.random()*quips.length)]
+    })).appendTo($frames);
+    
+    $old.addClass('past');
+		setTimeout(function(){
+			$current.removeClass('future');				
+			setTimeout(function(){
+			  $old.remove();
+			}, 600);
+		}, 200);
+
+    cursor = (cursor >= text.length -1) ? 1 : cursor + 1;
+  }
+  
+  function checkKey(e){
+    e = e || window.event;
+    if(e.keyCode=='39'){
+	  next_frame();
+    }
+  }
+  
+  $('#frames').delegate('a.quip', 'click', function(){
+    next_frame();
+  });
+
+  document.onkeydown = checkKey;
+  next_frame();
+});
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'XX-93356-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+
+</html>
